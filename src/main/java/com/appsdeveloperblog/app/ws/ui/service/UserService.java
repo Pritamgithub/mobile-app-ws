@@ -1,12 +1,10 @@
 package com.appsdeveloperblog.app.ws.ui.service;
 
-import com.appsdeveloperblog.app.ws.ui.controller.transport.UserDataTransferObject;
+import com.appsdeveloperblog.app.ws.ui.transport.UserDataTransferObject;
 
-public class UserService {
+public interface UserService {
 
-	public UserDataTransferObject createUser(UserDataTransferObject userDto) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	UserDataTransferObject createUser(UserDataTransferObject user);
+	UserDataTransferObject getUserById(String userId );
+	
 }
