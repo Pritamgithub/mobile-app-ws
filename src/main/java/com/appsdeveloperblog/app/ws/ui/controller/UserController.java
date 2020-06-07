@@ -42,7 +42,6 @@ public class UserController {
 	@PostMapping
 	public UserRest createUser(@RequestBody UserDetailsRequestModel userDetail) { // userdetails request input from the
 																					// user
-
 		UserRest returnValue = new UserRest(); // response
 		UserDataTransferObject userDto = new UserDataTransferObject(); // userdatatransfer object is class that can be
 																		// shared across all the layers
